@@ -9,10 +9,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Run
 
 ```powershell
-pythonw "C:\Users\13910\番茄钟\pomodoro.py"
+pythonw pomodoro.py          # 无命令行窗口启动
+python pomodoro.py           # 带命令行窗口（方便看报错）
 ```
 
-桌面有快捷方式 `番茄钟.lnk`，双击也可启动。
+## Verify
+
+```powershell
+python -m py_compile pomodoro.py   # 纯语法检查，快速验证
+```
 
 ## Dependencies
 
@@ -52,6 +57,6 @@ Claude Code 通过 DeepSeek 兼容 API 运行，配置在 `C:\Users\13910\.claud
 
 ## Notes
 
-- 用户是编程初学者，今天是学习第一天，解释技术概念时应保持简洁易懂
-- 用户使用 Windows 11 + PowerShell 5.1，注意 PowerShell 语法兼容性（无 `&&`、无三元运算符、无 `2>&1` 等）
+- 用户是编程初学者，解释技术概念时应保持简洁易懂
+- Windows 11 + PowerShell 5.1 — 注意兼容性：无 `&&` / 三元运算符 / `2>&1`，管道链用 `; if ($?) { ... }`
 - 安装软件优先用 `winget`，其次用 `pip`
