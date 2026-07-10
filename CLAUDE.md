@@ -57,6 +57,7 @@ Claude Code 通过 DeepSeek 兼容 API 运行，配置在 `C:\Users\13910\.claud
 
 ## Notes
 
+- **始终使用中文回复**
 - 用户是编程初学者，解释技术概念时应保持简洁易懂
 - Windows 11 + PowerShell 5.1 — 注意兼容性：无 `&&` / 三元运算符 / `2>&1`，管道链用 `; if ($?) { ... }`
 - 安装软件优先用 `winget`，其次用 `pip`
