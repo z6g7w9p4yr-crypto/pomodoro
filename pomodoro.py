@@ -114,11 +114,7 @@ class PomodoroApp:
         self.reset_btn.grid(row=0, column=1, padx=6)
 
         self.skip_btn = self._make_secondary_button(btn_frame, "跳过", self.skip)
-        self.skip_btn.grid(row=0, column=2, padx=6)
-
-        # 时间设置区
-        setting_frame = ctk.CTkFrame(self.root, corner_radius=16)
-        setting_frame.pack(pady=16, padx=30, fill="x")
+        self.skip_btn.grid(row=0, column=2, pme.pack(pady=16, padx=30, fill="x")
 
         self.focus_var = tk.StringVar(value=str(self.focus_minutes))
         self.break_var = tk.StringVar(value=str(self.break_minutes))
